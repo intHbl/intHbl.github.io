@@ -7,20 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>搜索 | Int-Han的博客</title>
-    <meta property="og:title" content="搜索 - Int-Han的博客">
+    <title>c | Int-Han的博客</title>
+    <meta property="og:title" content="c - Int-Han的博客">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="golang,微服务,python3,machine learning,deep learning,c/c&#43;&#43;,linux">
-    <meta name="description" content="搜索页面">
+    <meta name="description" content="c">
         
     <meta name="author" content="Int-Han">
-    <meta property="og:url" content="https://inthbl.github.io/search.html">
+    <meta property="og:url" content="https://inthbl.github.io/tags/c.html">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" type="application/rss+xml+xml" href="https://inthbl.github.io/tags/c/index.xml" title="Int-Han的博客" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -66,26 +67,44 @@
 
             <div class="col-8" id="main">
                 <div class="res-cons">
+                    
                     <h3 class="archive-title">
-                        搜索
-                        <span class="keyword">哈哈</span>
-                        的结果
+                        包含标签
+                        <span class="keyword">c</span>
+                        的文章
                     </h3>
+                    
 
-                    <article class="post">
-                        <header>
-                            <h1 class="post-title">
-                                <a href="链接">标题</a>
-                            </h1>
-                        </header>
-                        <date class="post-meta meta-date">
-                            2019年12月01日
-                        </date>
-                        <div class="post-content">
-                            概要……
-                            <p class="readmore"><a href="链接">阅读全文</a></p>
-                        </div>
-                    </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="https://inthbl.github.io/posts/tools/firstpage.html">Firstpage</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年12月20日
+                            </date>
+                            
+                            <div class="post-meta meta-category">
+                                |
+                                
+                                    <a href="https://inthbl.github.io/categories/tools">tools</a>
+                                
+                            </div>
+                            
+                            <div class="post-content">
+                                测试 测试标题 公式 $s=\sum_{i=0}^N a_i$ $$s=\int_0^xf(x)dx$$ code 1 2 3 4 5 6 func main(){ fmt.Println(&#34;hello world&#34;) } func Foo(){ //.. } 1 2 3 4 5 6 7 8 9 10 11 12 13……
+                                <p class="readmore"><a href="https://inthbl.github.io/posts/tools/firstpage.html">阅读全文</a></p>
+                            </div>
+                        </article>
+                    
+
+                    
+
+
+
+
 
                 </div>
             </div>
@@ -203,17 +222,6 @@
 </footer>
 
 
-    
-    <script type="text/javascript">
-        window.MathJax = {
-            tex2jax: {
-                inlineMath: [['$', '$']],
-                processEscapes: true
-                }
-            };
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
 
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
@@ -226,47 +234,5 @@
 
 
 
-<script type="text/javascript">
-
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = window.location.search.substring(1),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-        }
-    }
-};
-
-    $(document).ready(function() {
-        var q = getUrlParameter("q");
-        $("span.keyword").text(q);
-        $("article.post").remove();
-        $.ajax({
-            url: 'https:\/\/inthbl.github.io\/index.xml',
-            dataType: "xml",
-            success: function(data) {
-                $(data).find("item").each(function () {
-                    var item=$(this);
-                    var title=item.find("title").text();
-                    if (title.toLowerCase().indexOf(q.toLowerCase()) >= 0){
-                        var url = item.find("link").text();
-                        var searchItem=`<article class="post"><header><h1 class="post-title"><a href="`+url+`">`+title+`</a></h1></header>`;
-                        var pubDate = new Date(item.find("pubDate").text())
-                        searchItem+=`<date class="post-meta meta-date">`+pubDate.getFullYear()+`年`+(pubDate.getMonth()+1)+`月`+pubDate.getDate()+`日</date>`;
-                        searchItem+=`<div class="post-content">`+item.find("description").text()+`……<p class="readmore"><a href="`+url+`">阅读全文</a></p></div></article>`;
-
-                        $("div.res-cons").append(searchItem);
-                    }
-                });
-            }
-        });
-    });
-</script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Int-Han的博客</title>
+    <link>https://inthbl.github.io/categories/tools.html</link>
+    <description>Recent content in tools on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 20 Dec 2019 15:01:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firstpage</title>
+      <link>https://inthbl.github.io/posts/tools/firstpage.html</link>
+      <pubDate>Fri, 20 Dec 2019 15:01:44 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/tools/firstpage.html</guid>
+      <description>测试 测试标题 公式 $s=\sum_{i=0}^N a_i$ $$s=\int_0^xf(x)dx$$ code 1 2 3 4 5 6 func main(){ fmt.Println(&amp;#34;hello world&amp;#34;) } func Foo(){ //.. } 1 2 3 4 5 6 7 8 9 10 11 12 13</description>
+    </item>
+    
+  </channel>
+</rss>

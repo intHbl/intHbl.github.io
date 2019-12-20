@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.61.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Firstpage | Int-Han的博客</title>
+    <meta property="og:title" content="Firstpage - Int-Han的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2019-12-20T15:01:44&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2019-12-20T15:01:44&#43;08:00">
+        
+    <meta name="Keywords" content="golang,微服务,python3,machine learning,deep learning,c/c&#43;&#43;,linux">
+    <meta name="description" content="Firstpage">
+        
+    <meta name="author" content="Int-Han">
+    <meta property="og:url" content="https://inthbl.github.io/posts/tools/firstpage.html">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://inthbl.github.io/">
+                        Int-Han的博客
+                    </a>
+                
+                <p class="description">golang/微服务/python3/machine learning/deep learning/ c/c&#43;&#43; / linux</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://inthbl.github.io/">首页</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_posts.html" title="归档">归档</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_ml.html" title="ML">ML</a>
+                    
+                    <a  href="https://inthbl.github.io/about.html" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    <div class="sideToc">
+        <a href="javascript:void(0);">
+            <div id="sideTocHead">目 录</div>
+        </a>
+        <div id="sideTocBody" class="active">
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        .sideToc {
+            position: fixed;
+            z-index: 9999;
+            right: 30px;
+            display: flex;
+             
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #sideTocHead.active {
+            border: 2px red dotted;
+            background-color: white;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            border-radius: 5%;
+            height: 1rem;
+            font-size: 1rem;
+        }
+
+        #sideTocHead {
+            font-size: 0.5rem;
+            top: -20px;
+            color: tomato;
+            visibility: hidden;
+            font-weight: 700;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            padding: 0.2rem;
+            padding-left: 0.21rem;
+            padding-right: 0.1rem;
+            width: 1rem;
+            height: 2rem;
+            font-size: 0.9rem;
+            border-radius: 1%;
+        }
+
+         
+
+        #sideTocBody:hover {
+            width: 14rem;
+            transition: width 0.5s;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+        }
+
+        #sideTocBody {
+            transition: width 0.3s;
+            display: block;
+            background-color: white;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            padding: 1rem;
+            padding-bottom: 3em;
+             
+            font-weight: 500;
+            width: 8rem;
+            height: 15rem;
+            overflow-y: auto;
+        }
+
+        .tocItem {
+            font-size: 1m;
+            background-color: rgb(102, 102, 102);
+            background-color: white;
+            display: block;
+        }
+
+        .tocItem:hover {
+            color: white;
+            background-color: rgb(102, 102, 102);
+        }
+
+        #sideTocBody::-webkit-scrollbar {
+             
+            width: 10px;
+             
+            height: 1px;
+            display: none;
+        }
+
+        #sideTocBody::-webkit-scrollbar-thumb {
+             
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 5px rgba(202, 202, 202, 0.5);
+            background: #9c9c9c;
+        }
+
+        #sideTocBody::-webkit-scrollbar-track {
+             
+            -webkit-box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.5);
+            border-radius: 10px;
+            background: #EDEDED;
+        }
+    </style>
+    <script>
+        let isToggle = true;
+        document.querySelector("#sideTocHead").classList.add("active")
+        document.querySelector("#sideTocHead").addEventListener("click", function () {
+            if (isToggle) {
+                document.querySelector("#sideTocHead").classList.remove("active")
+                document.querySelector("#sideTocBody").style.display = "none"
+            } else {
+                document.querySelector("#sideTocHead").classList.add("active")
+                document.querySelector("#sideTocBody").style.display = "block"
+            }
+            isToggle = !isToggle;
+        })
+
+        document.querySelector("#sideTocHead").addEventListener("mouseenter", function () {
+            if (isToggle) {
+                document.querySelector("#sideTocBody").style.display = "block"
+            }
+
+        })
+
+        document.querySelector("#sideTocHead").addEventListener("mouseleave", function () {
+            if (!isToggle) {
+                document.querySelector("#sideTocBody").style.display = "none"
+            }
+        })
+
+        document.onscroll = function (x) {
+
+            let post = document.querySelector(".post-content")
+            let toc = document.querySelector("#sideTocBody")
+            toc.scrollTop = (window.scrollY - post.offsetTop + 100) / post.offsetHeight * toc.offsetHeight;
+            if (window.scrollY > 70) {
+                document.querySelector("#sideTocHead").style.visibility = "visible"
+                document.querySelector("#sideTocBody").style.visibility = "visible"
+            } else {
+                document.querySelector("#sideTocHead").style.visibility = "hidden"
+                document.querySelector("#sideTocBody").style.visibility = "hidden"
+            }
+        }
+    </script>
+    
+
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    <div class="res-cons">
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">Firstpage</h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年12月20日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>| 分类: </span>
+                                
+                                <span class="meta-category"><a href="https://inthbl.github.io/categories/tools">
+                                        tools</a></span>
+                                
+                            </div>
+                            
+                            
+                            <div class="post-meta">
+                                <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                                        阅读</span></span>
+                            </div>
+                            
+
+                            <div class="post-content">
+                                <h1 id="heading">测试</h1>
+<h2 id="heading-1">测试标题</h2>
+<p>公式</p>
+<p>$s=\sum_{i=0}^N a_i$</p>
+<p>$$s=\int_0^xf(x)dx$$</p>
+<p>code</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#000;font-weight:bold">func</span> <span style="color:#900;font-weight:bold">main</span>(){
+    fmt.<span style="color:#900;font-weight:bold">Println</span>(<span style="color:#d14">&#34;hello world&#34;</span>)
+}
+<span style="color:#000;font-weight:bold">func</span> <span style="color:#900;font-weight:bold">Foo</span>(){
+    <span style="color:#998;font-style:italic">//..
+</span><span style="color:#998;font-style:italic"></span>}
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">A</span>:
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>,a,b,c,<span style="color:#000;font-weight:bold">*</span>arg):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>foo()
+        <span style="color:#998;font-style:italic">##</span>
+ 	<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">foo</span>(<span style="color:#999">self</span>,<span style="color:#000;font-weight:bold">.</span><span style="color:#000;font-weight:bold">.</span>):
+        <span style="color:#998;font-style:italic">#...</span>
+        <span style="color:#000;font-weight:bold">pass</span>
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">B</span>(A):
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>,a,b,c,<span style="color:#000;font-weight:bold">*</span>arg):
+        <span style="color:#0086b3">super</span>(a,b,c,<span style="color:#000;font-weight:bold">*</span>arg)
+	
+<span style="color:#000;font-weight:bold">if</span> __name__<span style="color:#000;font-weight:bold">==</span><span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">__main__</span><span style="color:#d14">&#34;</span>:
+	<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">hello world</span><span style="color:#d14">&#34;</span>)
+	a<span style="color:#000;font-weight:bold">=</span>[<span style="color:#099">1</span>,<span style="color:#099">2</span>,<span style="color:#099">4</span>,<span style="color:#099">6</span>]
+	b<span style="color:#000;font-weight:bold">=</span>[i<span style="color:#000;font-weight:bold">*</span>i <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> a]
+	
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000;font-weight:bold">function</span> foo(){
+    ...arguments
+}
+<span style="color:#000;font-weight:bold">const</span> bar<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">function</span>(){
+    <span style="color:#998;font-style:italic">//..
+</span><span style="color:#998;font-style:italic"></span>}
+<span style="color:#000;font-weight:bold">const</span> bar2<span style="color:#000;font-weight:bold">=</span>()=&gt;{
+    
+}
+
+foo.bind(thisobj,arg1,arg2,....)
+
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="title">title</h2>
+<p>###image</p>
+<p><img src="image/image-20191220151415245.png" alt="image-20191220151415245"></p>
+<h3 id="link">link</h3>
+<p><a href="#%E6%B5%8B%E8%AF%95">alink</a></p>
+<p><a href="https://github.com/intHbl">anotherlink</a></p>
+<h3 id="table">table</h3>
+<table>
+<thead>
+<tr>
+<th>head</th>
+<th>a</th>
+<th>b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>row1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>row2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>row3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list">list</h3>
+<ul>
+<li>item1</li>
+<li>item2</li>
+<li>i3</li>
+<li>i4</li>
+</ul>
+<ol>
+<li>i21</li>
+<li>i22</li>
+<li>i23</li>
+</ol>
+
+                            </div>
+
+                            
+
+
+                            <div class="post-meta meta-tags">
+                                
+                                <ul class="clearfix">
+                                    
+
+                                    <li><a href="https://inthbl.github.io/tags/a.html">a</a>
+                                    </li>
+                                    
+
+                                    
+
+                                    <li><a href="https://inthbl.github.io/tags/b.html">b</a>
+                                    </li>
+                                    
+
+                                    
+
+                                    <li><a href="https://inthbl.github.io/tags/c.html">c</a>
+                                    </li>
+                                    
+
+                                    
+                                </ul>
+                                
+                            </div>
+                        </article>
+                        
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "intHbl/inthbl_blog_comment"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+                    </div>
+                </div>
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://inthbl.github.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://inthbl.github.io/posts/tools/firstpage.html" title="Firstpage">Firstpage</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="-" title="-" target="_blank" style="color:red">
+                
+                    -
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="" title="-" target="_blank" style="color:red">
+                
+                    -
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="" title="-" target="_blank" style="color:red">
+                
+                    -
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://inthbl.github.io/categories/tools.html">tools (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://inthbl.github.io/tags/a.html">a</a>
+    
+    <a href="https://inthbl.github.io/tags/b.html">b</a>
+    
+    <a href="https://inthbl.github.io/tags/c.html">c</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://github.com/intHbl" title="my github">github/intHbl</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="-" title="-">-</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://inthbl.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/about.html">About</a></li>
+        
+        <li><a href="/archives_ml.html">machine learning</a></li>
+        
+        <li><a href="/archives_posts.html">归档</a></li>
+        
+        <li><a href="/search.html">搜索</a></li>
+        
+    </ul>
+</div>
+
+
+    <footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="https://inthbl.github.io/">Int-Han的博客 By Int-Han</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script>
+
+            (function () {
+                console.log(document.querySelector(".post-content").offsetTop)
+                let nodes = document.querySelector(".post-content").querySelectorAll("h1,h2,h3,h4,h5,h6")
+                let sideTocBody = document.querySelector("#sideTocBody")
+                console.log(sideTocBody.offsetTop)
+                document.querySelector(".post-content").childNodes.forEach(x => {
+                    
+                    if (!x.tagName) {
+                        return
+                    }
+                    var tg = x.tagName.match(/^H(\d)$/);
+                    
+                    if (!tg) {
+                        return
+                    }
+                    console.log(x.clientTop)
+                    let hi = parseInt(tg[1])
+                    if (hi > 0) {
+                        let div = document.createElement("a")
+                        div.className = "tocItem"
+                        div.href = "#" + x.id;
+                        div.innerHTML = "&nbsp;".repeat(hi * 2) + x.innerText
+                        sideTocBody.appendChild(div)
+
+                    }
+
+                    
+                    
+                })
+
+            })()
+
+    </script>
+    <script type="text/javascript">
+            (function () {
+                if (typeof self === 'undefined' || !self.Prism || !self.document) {
+                    return;
+                }
+
+                if (!Prism.plugins.toolbar) {
+                    console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+
+                    return;
+                }
+
+                var ClipboardJS = window.ClipboardJS || undefined;
+
+                if (!ClipboardJS && typeof require === 'function') {
+                    ClipboardJS = require('clipboard');
+                }
+
+                var callbacks = [];
+
+                if (!ClipboardJS) {
+                    var script = document.createElement('script');
+                    var head = document.querySelector('head');
+
+                    script.onload = function () {
+                        ClipboardJS = window.ClipboardJS;
+
+                        if (ClipboardJS) {
+                            while (callbacks.length) {
+                                callbacks.pop()();
+                            }
+                        }
+                    };
+
+                    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js';
+                    head.appendChild(script);
+                }
+
+                Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
+                    var linkCopy = document.createElement('button');
+                    linkCopy.textContent = '复制代码';
+
+                    if (!ClipboardJS) {
+                        callbacks.push(registerClipboard);
+                    } else {
+                        registerClipboard();
+                    }
+
+                    return linkCopy;
+
+                    function registerClipboard() {
+                        var clip = new ClipboardJS(linkCopy, {
+                            'text': function () {
+                                return env.code;
+                            }
+                        });
+
+                        clip.on('success', function () {
+                            linkCopy.textContent = '复制成功!';
+
+                            resetText();
+                        });
+                        clip.on('error', function () {
+                            linkCopy.textContent = '按 Ctrl+C 复制';
+
+                            resetText();
+                        });
+                    }
+
+                    function resetText() {
+                        setTimeout(function () {
+                            linkCopy.textContent = '复制代码';
+                        }, 5000);
+                    }
+                });
+            })();
+
+    </script>
+</body>
+
+</html>
