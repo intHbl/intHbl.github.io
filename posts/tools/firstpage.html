@@ -149,6 +149,11 @@
             background-color: rgb(102, 102, 102);
         }
 
+        .tocItem.active {
+            color: rgb(185, 184, 184);
+            background-color: rgb(102, 102, 102);
+        }
+
         #sideTocBody::-webkit-scrollbar {
              
             width: 10px;
@@ -160,12 +165,14 @@
         #sideTocBody::-webkit-scrollbar-thumb {
              
             border-radius: 10px;
+            box-shadow: inset 0 0 5px rgba(202, 202, 202, 0.5);
             -webkit-box-shadow: inset 0 0 5px rgba(202, 202, 202, 0.5);
             background: #9c9c9c;
         }
 
         #sideTocBody::-webkit-scrollbar-track {
              
+            box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.5);
             -webkit-box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.5);
             border-radius: 10px;
             background: #EDEDED;
@@ -198,8 +205,7 @@
             }
         })
 
-        document.onscroll = function (x) {
-
+        document.addEventListener("scroll", function (x) {
             let post = document.querySelector(".post-content")
             let toc = document.querySelector("#sideTocBody")
             toc.scrollTop = (window.scrollY - post.offsetTop + 100) / post.offsetHeight * toc.offsetHeight;
@@ -210,7 +216,7 @@
                 document.querySelector("#sideTocHead").style.visibility = "hidden"
                 document.querySelector("#sideTocBody").style.visibility = "hidden"
             }
-        }
+        })
     </script>
     
 
@@ -430,6 +436,24 @@ foo.bind(thisobj,arg1,arg2,....)
       </script>
     </div>
     
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/about.html">About</a></li>
+        
+        <li><a href="/archives_ml.html">machine learning</a></li>
+        
+        <li><a href="/archives_posts.html">归档</a></li>
+        
+        <li><a href="/search.html">搜索</a></li>
+        
+    </ul>
+</div>
+
                     </div>
                 </div>
                 <div id="secondary">
@@ -535,22 +559,6 @@ foo.bind(thisobj,arg1,arg2,....)
             </div>
         </div>
     </div>
-    
-
-<div class="post-archive">
-    <h2>See Also</h2>
-    <ul class="listing">
-        
-        <li><a href="/about.html">About</a></li>
-        
-        <li><a href="/archives_ml.html">machine learning</a></li>
-        
-        <li><a href="/archives_posts.html">归档</a></li>
-        
-        <li><a href="/search.html">搜索</a></li>
-        
-    </ul>
-</div>
 
 
     <footer id="footer">
@@ -592,6 +600,7 @@ foo.bind(thisobj,arg1,arg2,....)
                 let nodes = document.querySelector(".post-content").querySelectorAll("h1,h2,h3,h4,h5,h6")
                 let sideTocBody = document.querySelector("#sideTocBody")
                 console.log(sideTocBody.offsetTop)
+                let tocItems = [];
                 document.querySelector(".post-content").childNodes.forEach(x => {
                     
                     if (!x.tagName) {
@@ -606,16 +615,50 @@ foo.bind(thisobj,arg1,arg2,....)
                     let hi = parseInt(tg[1])
                     if (hi > 0) {
                         let div = document.createElement("a")
-                        div.className = "tocItem"
+                        div.classList.add("tocItem")
                         div.href = "#" + x.id;
                         div.innerHTML = "&nbsp;".repeat(hi * 2) + x.innerText
                         sideTocBody.appendChild(div)
-
+                        tocItems.push([x.offsetTop, div])
                     }
 
                     
                     
                 })
+
+                tocItems.sort((x) => {
+                    return x[0]
+                })
+
+
+                let last = 0;
+                function item_i(i) {
+                    return tocItems[i][1]
+                }
+                function item_offsetY(i) {
+                    return tocItems[i][0]
+                }
+
+                item_i(last).classList.add("active")
+
+                window.addEventListener("scroll", function (x) {
+                    for (let i = 0; i < tocItems.length; i++) {
+                        
+                        if (window.scrollY < item_offsetY(i)) {
+                            if (window.scrollY + 0.8 * window.innerHeight < item_offsetY(i)) {
+                                i = i >= 1 ? i - 1 : 0
+                            }
+                            if (i != last) {
+                                item_i(last).classList.remove("active")
+                                item_i(i).classList.add("active")
+                                last = i
+                                console.log(i)
+                            }
+                            break
+                        }
+                    }
+                })
+
 
             })()
 
