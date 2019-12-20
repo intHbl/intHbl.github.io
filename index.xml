@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Int-Han的博客</title>
+    <link>https://inthbl.github.io/</link>
+    <description>Recent content on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 19 Dec 2019 18:08:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://inthbl.github.io/about.html</link>
+      <pubDate>Thu, 19 Dec 2019 18:08:47 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/about.html</guid>
+      <description>about github : https://github.com/intHbl</description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://inthbl.github.io/archives_ml.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inthbl.github.io/archives_ml.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>归档</title>
+      <link>https://inthbl.github.io/archives_posts.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inthbl.github.io/archives_posts.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>搜索</title>
+      <link>https://inthbl.github.io/search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://inthbl.github.io/search.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
