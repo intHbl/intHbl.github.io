@@ -17,7 +17,7 @@
       <pubDate>Fri, 20 Dec 2019 15:01:44 +0800</pubDate>
       
       <guid>https://inthbl.github.io/posts/tools/firstpage.html</guid>
-      <description>测试 测试标题 公式 $s=\sum_{i=0}^N a_i$ $$s=\int_0^xf(x)dx$$ code 1 2 3 4 5 6 func main(){ fmt.Println(&amp;#34;hello world&amp;#34;) } func Foo(){ //.. } 1 2 3 4 5 6 7 8 9 10 11 12 13</description>
+      <description>测试 测试标题 公式 $s=\sum_{i=0}^N a_i$ $$s=\int_0^xf(x)dx$$ code func main(){ fmt.Println(&amp;#34;hello world&amp;#34;) } func Foo(){ //.. } class A: def __init__(self,a,b,c,*arg): self.foo() ## def foo(self,..): #... pass class B(A): def __init__(self,a,b,c,*arg): super(a,b,c,*arg) if __name__==&amp;#34;__main__&amp;#34;: print(&amp;#34;hello world&amp;#34;)</description>
     </item>
     
   </channel>

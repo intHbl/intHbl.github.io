@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
+
 <head>
 
     <meta charset="utf-8">
@@ -10,21 +11,23 @@
     <title>About | Int-Han的博客</title>
     <meta property="og:title" content="About - Int-Han的博客">
     <meta property="og:type" content="article">
-        
+    
     <meta property="article:published_time" content="2019-12-17T18:08:47&#43;08:00">
-        
-        
+    
+    
     <meta property="article:modified_time" content="2019-12-17T18:08:47&#43;08:00">
-        
+    
     <meta name="Keywords" content="golang,微服务,python3,machine learning,deep learning,c/c&#43;&#43;,linux">
     <meta name="description" content="About">
-        
+    
     <meta name="author" content="Int-Han">
     <meta property="og:url" content="https://inthbl.github.io/about.html">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/prism.css">
+
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -33,7 +36,6 @@
     
     
 </head>
-
 
 <body>
     <header id="header" class="clearfix">
@@ -281,7 +283,7 @@
                 console.log(document.querySelector(".post-content").offsetTop)
                 let nodes = document.querySelector(".post-content").querySelectorAll("h1,h2,h3,h4,h5,h6")
                 let sideTocBody = document.querySelector("#sideTocBody")
-                console.log(sideTocBody.offsetTop)
+                
                 let tocItems = [];
                 document.querySelector(".post-content").childNodes.forEach(x => {
                     
@@ -293,7 +295,7 @@
                     if (!tg) {
                         return
                     }
-                    console.log(x.clientTop)
+                    
                     let hi = parseInt(tg[1])
                     if (hi > 0) {
                         let div = document.createElement("a")
@@ -334,7 +336,7 @@
                                 item_i(last).classList.remove("active")
                                 item_i(i).classList.add("active")
                                 last = i
-                                console.log(i)
+                                
                             }
                             break
                         }
@@ -345,6 +347,7 @@
             })()
 
     </script>
+    <script type="text/javascript" src="/prism.js"></script>
     <script type="text/javascript">
             (function () {
                 if (typeof self === 'undefined' || !self.Prism || !self.document) {
