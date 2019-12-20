@@ -1,0 +1,15 @@
+dev/
+build/
+out/
+
+public/
+
+
+.idea
+.git
+desktop.ini
+.DS_Store
+
+
+*.test
+*.exe
