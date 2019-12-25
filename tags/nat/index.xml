@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nat on Int-Han的博客</title>
+    <link>https://inthbl.github.io/tags/nat.html</link>
+    <description>Recent content in nat on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 14:16:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/tags/nat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>协议</title>
+      <link>https://inthbl.github.io/posts/network/%E5%8D%8F%E8%AE%AE.html</link>
+      <pubDate>Wed, 25 Dec 2019 14:16:04 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/network/%E5%8D%8F%E8%AE%AE.html</guid>
+      <description>ip ip地址 tcp | udp 端口 NAT nat类型 p2p打洞原理</description>
+    </item>
+    
+  </channel>
+</rss>

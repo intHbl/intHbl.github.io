@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Int-Han的博客</title>
+    <link>https://inthbl.github.io/categories/linux.html</link>
+    <description>Recent content in linux on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 01:34:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configfile</title>
+      <link>https://inthbl.github.io/posts/linux/configfile.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:34:28 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/configfile.html</guid>
+      <description>配置文件格式 json; yaml; ini; toml json: .json v k:v 值v 可以为下列3选1: v [v,v,v] {k:v,} 注释的方法(不一定支持)</description>
+    </item>
+    
+    <item>
+      <title>Syscall</title>
+      <link>https://inthbl.github.io/posts/linux/syscall.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:16:24 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/syscall.html</guid>
+      <description>api , system call System calls can be grouped roughly into six major categories:[12] Process control • create process (for example, fork on Unix-like systems, or NtCreateProcess in the Windows NT Native API) • terminate process • load, execute •</description>
+    </item>
+    
+    <item>
+      <title>Memory</title>
+      <link>https://inthbl.github.io/posts/linux/memory.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:06:09 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/memory.html</guid>
+      <description>二进制文件 与 进程内存的对应关系 linux下 ELF格式为例: bit HEX=4bit byte=8bit word=16bit , double word=32bit long=32bit long long=64bit application</description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://inthbl.github.io/posts/linux/linux.html</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:43 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/linux.html</guid>
+      <description>boot 加电&amp;ndash;&amp;gt; 主板初始化程序 &amp;ndash;&amp;gt; bootloader(mode:real-&amp;gt;protect) &amp;mdash;&amp;gt; 操作系统 操作系统 初始化 kernel: vmlinuz-&amp;hellip; ramfs: initramfs&amp;hellip; 服</description>
+    </item>
+    
+  </channel>
+</rss>

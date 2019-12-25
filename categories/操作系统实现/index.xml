@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>操作系统实现 on Int-Han的博客</title>
+    <link>https://inthbl.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0.html</link>
+    <description>Recent content in 操作系统实现 on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 01:24:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>占坑</title>
+      <link>https://inthbl.github.io/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0/%E5%8D%A0%E5%9D%91.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:24:15 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0/%E5%8D%A0%E5%9D%91.html</guid>
+      <description>占坑 system call 由 中断 实现. 代码地址的跳转 多任务 MM, 物理内存,逻辑内存 , 内存共享 , GDT(Global Descriptor Table) 分</description>
+    </item>
+    
+  </channel>
+</rss>

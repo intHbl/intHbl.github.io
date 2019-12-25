@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>boot on Int-Han的博客</title>
+    <link>https://inthbl.github.io/tags/boot.html</link>
+    <description>Recent content in boot on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 00:00:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/tags/boot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux</title>
+      <link>https://inthbl.github.io/posts/linux/linux.html</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:43 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/linux.html</guid>
+      <description>boot 加电&amp;ndash;&amp;gt; 主板初始化程序 &amp;ndash;&amp;gt; bootloader(mode:real-&amp;gt;protect) &amp;mdash;&amp;gt; 操作系统 操作系统 初始化 kernel: vmlinuz-&amp;hellip; ramfs: initramfs&amp;hellip; 服</description>
+    </item>
+    
+  </channel>
+</rss>

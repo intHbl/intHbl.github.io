@@ -6,10 +6,73 @@
     <description>Recent content on Int-Han的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Dec 2019 15:01:44 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 14:16:04 +0800</lastBuildDate>
     
 	<atom:link href="https://inthbl.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>协议</title>
+      <link>https://inthbl.github.io/posts/network/%E5%8D%8F%E8%AE%AE.html</link>
+      <pubDate>Wed, 25 Dec 2019 14:16:04 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/network/%E5%8D%8F%E8%AE%AE.html</guid>
+      <description>ip ip地址 tcp | udp 端口 NAT nat类型 p2p打洞原理</description>
+    </item>
+    
+    <item>
+      <title>Configfile</title>
+      <link>https://inthbl.github.io/posts/linux/configfile.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:34:28 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/configfile.html</guid>
+      <description>配置文件格式 json; yaml; ini; toml json: .json v k:v 值v 可以为下列3选1: v [v,v,v] {k:v,} 注释的方法(不一定支持)</description>
+    </item>
+    
+    <item>
+      <title>Protobuf</title>
+      <link>https://inthbl.github.io/posts/golang/protobuf.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:27:37 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/golang/protobuf.html</guid>
+      <description>grpc protobuf3 struct ,数据 grpc http/2 服务接口 .proto syntax=&amp;#34;proto3&amp;#34;;package xxxx;message Data{ string name=1; //optional|required; # 默认 optional int32 age=2; // repeated array }message Response{ string xx=1; int64 abc=2; repeated string yy=3;}//rpc service SSS{ rpc</description>
+    </item>
+    
+    <item>
+      <title>占坑</title>
+      <link>https://inthbl.github.io/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0/%E5%8D%A0%E5%9D%91.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:24:15 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0/%E5%8D%A0%E5%9D%91.html</guid>
+      <description>占坑 system call 由 中断 实现. 代码地址的跳转 多任务 MM, 物理内存,逻辑内存 , 内存共享 , GDT(Global Descriptor Table) 分</description>
+    </item>
+    
+    <item>
+      <title>Syscall</title>
+      <link>https://inthbl.github.io/posts/linux/syscall.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:16:24 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/syscall.html</guid>
+      <description>api , system call System calls can be grouped roughly into six major categories:[12] Process control • create process (for example, fork on Unix-like systems, or NtCreateProcess in the Windows NT Native API) • terminate process • load, execute •</description>
+    </item>
+    
+    <item>
+      <title>Memory</title>
+      <link>https://inthbl.github.io/posts/linux/memory.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:06:09 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/memory.html</guid>
+      <description>二进制文件 与 进程内存的对应关系 linux下 ELF格式为例: bit HEX=4bit byte=8bit word=16bit , double word=32bit long=32bit long long=64bit application</description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://inthbl.github.io/posts/linux/linux.html</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:43 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/posts/linux/linux.html</guid>
+      <description>boot 加电&amp;ndash;&amp;gt; 主板初始化程序 &amp;ndash;&amp;gt; bootloader(mode:real-&amp;gt;protect) &amp;mdash;&amp;gt; 操作系统 操作系统 初始化 kernel: vmlinuz-&amp;hellip; ramfs: initramfs&amp;hellip; 服</description>
+    </item>
     
     <item>
       <title>Firstpage</title>
