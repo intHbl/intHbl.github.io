@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basics on Int-Han的博客</title>
+    <link>https://inthbl.github.io/basic.html</link>
+    <description>Recent content in Basics on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 17:02:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/basic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Https</title>
+      <link>https://inthbl.github.io/basic/https.html</link>
+      <pubDate>Wed, 25 Dec 2019 17:02:15 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/basic/https.html</guid>
+      <description>https 证书 客户 | CA证书机构 | 服务方 客户 C: 持有预装的 CA公钥! CA: CA私钥,CA公钥 服</description>
+    </item>
+    
+    <item>
+      <title>Hash 加密 签名 压缩</title>
+      <link>https://inthbl.github.io/basic/hash.html</link>
+      <pubDate>Wed, 25 Dec 2019 16:40:13 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/basic/hash.html</guid>
+      <description>[]byte &amp;ndash;算法&amp;ndash;&amp;gt; []byte 失真(丢失部分信息) Hash 摘要 md5 sha1 &amp;hellip; ==&amp;gt; 定</description>
+    </item>
+    
+    <item>
+      <title>网络协议栈(ip之上)</title>
+      <link>https://inthbl.github.io/basic/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.html</link>
+      <pubDate>Wed, 25 Dec 2019 14:16:04 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/basic/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.html</guid>
+      <description>ip ip地址 tcp | udp 端口 NAT nat类型, p2p打洞原理 static : ip2 可以主动 连接ip1&amp;rsq</description>
+    </item>
+    
+    <item>
+      <title>Firstpage</title>
+      <link>https://inthbl.github.io/basic/firstpage.html</link>
+      <pubDate>Fri, 20 Dec 2019 15:01:44 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/basic/firstpage.html</guid>
+      <description>测试 测试标题 公式 $s=\sum_{i=0}^N a_i$ $$s=\int_0^xf(x)dx$$ code func main(){ fmt.Println(&amp;#34;hello world&amp;#34;) } func Foo(){ //.. } class A: def __init__(self,a,b,c,*arg): self.foo() ## def foo(self,..): #... pass class B(A): def __init__(self,a,b,c,*arg): super(a,b,c,*arg) if __name__==&amp;#34;__main__&amp;#34;: print(&amp;#34;hello world&amp;#34;)</description>
+    </item>
+    
+  </channel>
+</rss>

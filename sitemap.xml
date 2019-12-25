@@ -13,7 +13,12 @@
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/categories/mlmath.html</loc>
+    <loc>https://inthbl.github.io/tags/math.html</loc>
+    <lastmod>2019-12-25T18:14:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://inthbl.github.io/categories/ml.html</loc>
     <lastmod>2019-12-25T18:14:09+08:00</lastmod>
   </url>
   
@@ -28,7 +33,7 @@
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</loc>
+    <loc>https://inthbl.github.io/tags/%E5%BB%BA%E6%A8%A1.html</loc>
     <lastmod>2019-12-25T18:14:09+08:00</lastmod>
   </url>
   
@@ -38,22 +43,17 @@
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.html</loc>
-    <lastmod>2019-12-25T18:14:09+08:00</lastmod>
+    <loc>https://inthbl.github.io/basic.html</loc>
+    <lastmod>2019-12-25T17:02:15+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/posts/%E5%9F%BA%E7%A1%80/https.html</loc>
+    <loc>https://inthbl.github.io/basic/https.html</loc>
     <lastmod>2019-12-25T17:02:15+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://inthbl.github.io/tags/https%E6%8F%A1%E6%89%8B.html</loc>
-    <lastmod>2019-12-25T17:02:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inthbl.github.io/posts.html</loc>
     <lastmod>2019-12-25T17:02:15+08:00</lastmod>
   </url>
   
@@ -68,7 +68,7 @@
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/posts/%E5%9F%BA%E7%A1%80/hash.html</loc>
+    <loc>https://inthbl.github.io/basic/hash.html</loc>
     <lastmod>2019-12-25T16:40:13+08:00</lastmod>
   </url>
   
@@ -78,12 +78,17 @@
   </url>
   
   <url>
+    <loc>https://inthbl.github.io/golang.html</loc>
+    <lastmod>2019-12-25T15:19:02+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://inthbl.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.html</loc>
     <lastmod>2019-12-25T15:19:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/posts/%E5%9F%BA%E7%A1%80/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html</loc>
+    <loc>https://inthbl.github.io/golang/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html</loc>
     <lastmod>2019-12-25T15:19:02+08:00</lastmod>
   </url>
   
@@ -103,7 +108,7 @@
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/posts/%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.html</loc>
+    <loc>https://inthbl.github.io/basic/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.html</loc>
     <lastmod>2019-12-25T14:16:04+08:00</lastmod>
   </url>
   
@@ -124,11 +129,6 @@
   
   <url>
     <loc>https://inthbl.github.io/categories/golang.html</loc>
-    <lastmod>2019-12-25T01:27:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://inthbl.github.io/golang.html</loc>
     <lastmod>2019-12-25T01:27:37+08:00</lastmod>
   </url>
   
@@ -213,7 +213,7 @@
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/posts/%E5%9F%BA%E7%A1%80/firstpage.html</loc>
+    <loc>https://inthbl.github.io/basic/firstpage.html</loc>
     <lastmod>2019-12-20T15:01:44+08:00</lastmod>
   </url>
   
@@ -235,7 +235,7 @@
   </url>
   
   <url>
-    <loc>https://inthbl.github.io/archives_posts.html</loc>
+    <loc>https://inthbl.github.io/archives_basic.html</loc>
   </url>
   
   <url>

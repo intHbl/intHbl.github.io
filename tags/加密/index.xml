@@ -13,10 +13,10 @@
     
     <item>
       <title>Hash 加密 签名 压缩</title>
-      <link>https://inthbl.github.io/posts/%E5%9F%BA%E7%A1%80/hash.html</link>
+      <link>https://inthbl.github.io/basic/hash.html</link>
       <pubDate>Wed, 25 Dec 2019 16:40:13 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/posts/%E5%9F%BA%E7%A1%80/hash.html</guid>
+      <guid>https://inthbl.github.io/basic/hash.html</guid>
       <description>[]byte &amp;ndash;算法&amp;ndash;&amp;gt; []byte 失真(丢失部分信息) Hash 摘要 md5 sha1 &amp;hellip; ==&amp;gt; 定</description>
     </item>
     
