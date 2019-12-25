@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golangs on Int-Han的博客</title>
+    <link>https://inthbl.github.io/golang.html</link>
+    <description>Recent content in Golangs on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 01:27:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Protobuf</title>
+      <link>https://inthbl.github.io/golang/protobuf.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:27:37 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/golang/protobuf.html</guid>
+      <description>grpc protobuf3 struct ,数据 grpc http/2 服务接口 .proto syntax=&amp;#34;proto3&amp;#34;;package xxxx;message Data{ string name=1; //optional|required; # 默认 optional int32 age=2; // repeated array }message Response{ string xx=1; int64 abc=2; repeated string yy=3;}//rpc service SSS{ rpc</description>
+    </item>
+    
+  </channel>
+</rss>

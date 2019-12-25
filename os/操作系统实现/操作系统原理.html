@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.62.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>占坑 | Int-Han的博客</title>
+    <meta property="og:title" content="占坑 - Int-Han的博客">
+    <meta property="og:type" content="article">
+    
+    <meta property="article:published_time" content="2019-12-25T01:24:15&#43;08:00">
+    
+    
+    <meta property="article:modified_time" content="2019-12-25T01:24:15&#43;08:00">
+    
+    <meta name="Keywords" content="golang,微服务,python3,machine learning,deep learning,c/c&#43;&#43;,linux">
+    <meta name="description" content="占坑">
+    
+    <meta name="author" content="Int-Han">
+    <meta property="og:url" content="https://inthbl.github.io/os/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.html">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/prism.css">
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://inthbl.github.io/">
+                        Int-Han的博客
+                    </a>
+                
+                <p class="description">golang/微服务/python3/machine learning/deep learning/ c/c&#43;&#43; / linux</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://inthbl.github.io/">首页</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_posts.html" title="归档">归档</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_ml.html" title="ML">ML</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_golang.html" title="GoLang">GoLang</a>
+                    
+                    <a  href="https://inthbl.github.io/about.html" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    <div class="sideToc">
+        <a href="javascript:void(0);">
+            <div id="sideTocHead">目 录</div>
+        </a>
+        <div id="sideTocBody" class="active">
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        .sideToc {
+            position: fixed;
+            z-index: 9999;
+            right: 30px;
+            display: flex;
+             
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #sideTocHead.active {
+            border: 2px red dotted;
+            background-color: white;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            border-radius: 5%;
+            height: 1rem;
+            font-size: 1rem;
+        }
+
+        #sideTocHead {
+            font-size: 0.5rem;
+            top: -20px;
+            color: tomato;
+            visibility: hidden;
+            font-weight: 700;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            padding: 0.2rem;
+            padding-left: 0.21rem;
+            padding-right: 0.1rem;
+            width: 1rem;
+            height: 2rem;
+            font-size: 0.9rem;
+            border-radius: 1%;
+        }
+
+         
+
+        #sideTocBody:hover {
+            width: 14rem;
+            transition: width 0.5s;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+        }
+
+        #sideTocBody {
+            transition: width 0.3s;
+            display: block;
+            background-color: white;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            padding: 1rem;
+            padding-bottom: 3em;
+             
+            font-weight: 500;
+            width: 8rem;
+            height: 15rem;
+            overflow-y: auto;
+        }
+
+        .tocItem {
+            font-size: 1m;
+            background-color: rgb(102, 102, 102);
+            background-color: white;
+            display: block;
+        }
+
+        .tocItem:hover {
+            color: white;
+            background-color: rgb(102, 102, 102);
+        }
+
+        .tocItem.active {
+            color: rgb(185, 184, 184);
+            background-color: rgb(102, 102, 102);
+        }
+
+        #sideTocBody::-webkit-scrollbar {
+             
+            width: 10px;
+             
+            height: 1px;
+            display: none;
+        }
+
+        #sideTocBody::-webkit-scrollbar-thumb {
+             
+            border-radius: 10px;
+            box-shadow: inset 0 0 5px rgba(202, 202, 202, 0.5);
+            -webkit-box-shadow: inset 0 0 5px rgba(202, 202, 202, 0.5);
+            background: #9c9c9c;
+        }
+
+        #sideTocBody::-webkit-scrollbar-track {
+             
+            box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.5);
+            -webkit-box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.5);
+            border-radius: 10px;
+            background: #EDEDED;
+        }
+    </style>
+    <script>
+        let isToggle = true;
+        document.querySelector("#sideTocHead").classList.add("active")
+        document.querySelector("#sideTocHead").addEventListener("click", function () {
+            if (isToggle) {
+                document.querySelector("#sideTocHead").classList.remove("active")
+                document.querySelector("#sideTocBody").style.display = "none"
+            } else {
+                document.querySelector("#sideTocHead").classList.add("active")
+                document.querySelector("#sideTocBody").style.display = "block"
+            }
+            isToggle = !isToggle;
+        })
+
+        document.querySelector("#sideTocHead").addEventListener("mouseenter", function () {
+            if (isToggle) {
+                document.querySelector("#sideTocBody").style.display = "block"
+            }
+
+        })
+
+        document.querySelector("#sideTocHead").addEventListener("mouseleave", function () {
+            if (!isToggle) {
+                document.querySelector("#sideTocBody").style.display = "none"
+            }
+        })
+
+        document.addEventListener("scroll", function (x) {
+            let post = document.querySelector(".post-content")
+            let toc = document.querySelector("#sideTocBody")
+            toc.scrollTop = (window.scrollY - post.offsetTop + 100) / post.offsetHeight * toc.offsetHeight;
+            if (window.scrollY > 70) {
+                document.querySelector("#sideTocHead").style.visibility = "visible"
+                document.querySelector("#sideTocBody").style.visibility = "visible"
+            } else {
+                document.querySelector("#sideTocHead").style.visibility = "hidden"
+                document.querySelector("#sideTocBody").style.visibility = "hidden"
+            }
+        })
+    </script>
+    
+
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    <div class="res-cons">
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">占坑</h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年12月25日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>| 分类: </span>
+                                
+                                <span class="meta-category"><a href="https://inthbl.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0">
+                                        操作系统实现</a></span>
+                                
+                            </div>
+                            
+                            
+                            <div class="post-meta">
+                                <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                                        阅读</span></span>
+                            </div>
+                            
+
+                            <div class="post-content">
+                                <h2 id="heading">占坑</h2>
+<ul>
+<li>
+<p>system call</p>
+</li>
+<li>
+<p>由 中断 实现. 代码地址的跳转</p>
+</li>
+<li>
+<p>多任务</p>
+<ul>
+<li>
+<p>MM,   物理内存,逻辑内存 , 内存共享  , GDT(Global Descriptor Table)</p>
+<ul>
+<li>
+<p>分段 segmentation,  ldt(Local Descriptor Table在PCB中)&ndash;&gt; ldtr(register)</p>
+<ul>
+<li>
+<p>相对于 进程(用户)来说.</p>
+</li>
+<li>
+<p>一个进程 分成 不同的段 (功能code,data,heap,stack),(读写控制r/w,)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>相对于  物理内存(硬件)</p>
+<ul>
+<li><del>分区 partition(内存怎么分割,然后将程序载入到分区中.),</del>
+<ul>
+<li><del>内存分出来 放/加载 进程.</del></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><del>分区 效率不高, <strong>碎片</strong>.</del></p>
+<ul>
+<li>
+<p>分页 paging(<strong>减少碎片化</strong>,4kb=2^12,多级页)</p>
+<ul>
+<li>页表.  page,offset</li>
+<li>段+页 结合</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>中断, 时间分片(分时)</p>
+<ul>
+<li>进程: PCB(process control block) , PID(process ID)</li>
+</ul>
+</li>
+<li>
+<p>block/cluster</p>
+</li>
+<li>
+<p>设备 = IO (open ,write, read, close).  &gt;汇编 out xxx  al</p>
+<ul>
+<li>(fs) file system</li>
+<li>设备
+<ul>
+<li>disk (扇区512KB&ndash;&gt;block(常见4KB)&ndash;&gt;file&ndash;&gt;fs) FCB(file control block)==inode</li>
+<li>网络,&hellip;</li>
+<li>屏幕,键盘,</li>
+<li><a href="./dev.md">驱动,driver</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+
+                            
+
+
+                            <div class="post-meta meta-tags">
+                                
+                                <ul class="clearfix">
+                                    
+
+                                    <li><a href="https://inthbl.github.io/tags/os%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0.html">os原理及实现</a>
+                                    </li>
+                                    
+
+                                    
+                                </ul>
+                                
+                            </div>
+                        </article>
+                        
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "intHbl/inthbl_blog_comment"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/os/linux/syscall.html">Syscall</a></li>
+        
+        <li><a href="/os/linux/memory.html">Memory</a></li>
+        
+        <li><a href="/os/linux/linux.html">Linux</a></li>
+        
+        <li><a href="/posts/tools/firstpage.html">Firstpage</a></li>
+        
+        <li><a href="/about.html">About</a></li>
+        
+    </ul>
+</div>
+
+                    </div>
+                </div>
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://inthbl.github.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://inthbl.github.io/posts/network/%E5%8D%8F%E8%AE%AE.html" title="协议">协议</a>
+    </li>
+    
+    <li>
+        <a href="https://inthbl.github.io/posts/tools/firstpage.html" title="Firstpage">Firstpage</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="-" title="-" target="_blank" style="color:red">
+                
+                    -
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="" title="-" target="_blank" style="color:red">
+                
+                    -
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="" title="-" target="_blank" style="color:red">
+                
+                    -
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://inthbl.github.io/categories/golang.html">golang (1)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/linux.html">linux (4)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/network.html">network (1)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/tools.html">tools (1)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0.html">操作系统实现 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://inthbl.github.io/tags/a.html">a</a>
+    
+    <a href="https://inthbl.github.io/tags/b.html">b</a>
+    
+    <a href="https://inthbl.github.io/tags/bash.html">bash</a>
+    
+    <a href="https://inthbl.github.io/tags/boot.html">boot</a>
+    
+    <a href="https://inthbl.github.io/tags/c.html">c</a>
+    
+    <a href="https://inthbl.github.io/tags/c%E6%8E%A5%E5%8F%A3.html">c接口</a>
+    
+    <a href="https://inthbl.github.io/tags/grpc.html">grpc</a>
+    
+    <a href="https://inthbl.github.io/tags/nat.html">nat</a>
+    
+    <a href="https://inthbl.github.io/tags/network.html">network</a>
+    
+    <a href="https://inthbl.github.io/tags/os.html">os</a>
+    
+    <a href="https://inthbl.github.io/tags/os%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0.html">os原理及实现</a>
+    
+    <a href="https://inthbl.github.io/tags/protobuf3.html">protobuf3</a>
+    
+    <a href="https://inthbl.github.io/tags/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.html">内存布局</a>
+    
+    <a href="https://inthbl.github.io/tags/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8.html">系统调用</a>
+    
+    <a href="https://inthbl.github.io/tags/%E8%BF%9B%E7%A8%8B.html">进程</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://github.com/intHbl" title="my github">github/intHbl</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="-" title="-">-</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://inthbl.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="https://inthbl.github.io/">Int-Han的博客 By Int-Han</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script>
+
+            (function () {
+                console.log(document.querySelector(".post-content").offsetTop)
+                let nodes = document.querySelector(".post-content").querySelectorAll("h1,h2,h3,h4,h5,h6")
+                let sideTocBody = document.querySelector("#sideTocBody")
+                
+                let tocItems = [];
+                document.querySelector(".post-content").childNodes.forEach(x => {
+                    
+                    if (!x.tagName) {
+                        return
+                    }
+                    var tg = x.tagName.match(/^H(\d)$/);
+                    
+                    if (!tg) {
+                        return
+                    }
+                    
+                    let hi = parseInt(tg[1])
+                    if (hi > 0) {
+                        let div = document.createElement("a")
+                        div.classList.add("tocItem")
+                        div.href = "#" + x.id;
+                        div.innerHTML = "&nbsp;".repeat(hi * 2) + x.innerText
+                        sideTocBody.appendChild(div)
+                        tocItems.push([x.offsetTop, div])
+                    }
+
+                    
+                    
+                })
+
+                tocItems.sort((x) => {
+                    return x[0]
+                })
+
+
+                let last = 0;
+                function item_i(i) {
+                    return tocItems[i][1]
+                }
+                function item_offsetY(i) {
+                    return tocItems[i][0]
+                }
+
+                item_i(last).classList.add("active")
+
+                window.addEventListener("scroll", function (x) {
+                    for (let i = 0; i < tocItems.length; i++) {
+                        
+                        if (window.scrollY < item_offsetY(i)) {
+                            if (window.scrollY + 0.8 * window.innerHeight < item_offsetY(i)) {
+                                i = i >= 1 ? i - 1 : 0
+                            }
+                            if (i != last) {
+                                item_i(last).classList.remove("active")
+                                item_i(i).classList.add("active")
+                                last = i
+                                
+                            }
+                            break
+                        }
+                    }
+                })
+
+
+            })()
+
+    </script>
+    <script type="text/javascript" src="/prism.js"></script>
+    <script type="text/javascript">
+            (function () {
+                if (typeof self === 'undefined' || !self.Prism || !self.document) {
+                    return;
+                }
+
+                if (!Prism.plugins.toolbar) {
+                    console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+
+                    return;
+                }
+
+                var ClipboardJS = window.ClipboardJS || undefined;
+
+                if (!ClipboardJS && typeof require === 'function') {
+                    ClipboardJS = require('clipboard');
+                }
+
+                var callbacks = [];
+
+                if (!ClipboardJS) {
+                    var script = document.createElement('script');
+                    var head = document.querySelector('head');
+
+                    script.onload = function () {
+                        ClipboardJS = window.ClipboardJS;
+
+                        if (ClipboardJS) {
+                            while (callbacks.length) {
+                                callbacks.pop()();
+                            }
+                        }
+                    };
+
+                    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js';
+                    head.appendChild(script);
+                }
+
+                Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
+                    var linkCopy = document.createElement('button');
+                    linkCopy.textContent = '复制代码';
+
+                    if (!ClipboardJS) {
+                        callbacks.push(registerClipboard);
+                    } else {
+                        registerClipboard();
+                    }
+
+                    return linkCopy;
+
+                    function registerClipboard() {
+                        var clip = new ClipboardJS(linkCopy, {
+                            'text': function () {
+                                return env.code;
+                            }
+                        });
+
+                        clip.on('success', function () {
+                            linkCopy.textContent = '复制成功!';
+
+                            resetText();
+                        });
+                        clip.on('error', function () {
+                            linkCopy.textContent = '按 Ctrl+C 复制';
+
+                            resetText();
+                        });
+                    }
+
+                    function resetText() {
+                        setTimeout(function () {
+                            linkCopy.textContent = '复制代码';
+                        }, 5000);
+                    }
+                });
+            })();
+
+    </script>
+</body>
+
+</html>

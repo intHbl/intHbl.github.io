@@ -13,10 +13,10 @@
     
     <item>
       <title>Linux</title>
-      <link>https://inthbl.github.io/posts/linux/linux.html</link>
+      <link>https://inthbl.github.io/os/linux/linux.html</link>
       <pubDate>Wed, 25 Dec 2019 00:00:43 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/posts/linux/linux.html</guid>
+      <guid>https://inthbl.github.io/os/linux/linux.html</guid>
       <description>boot 加电&amp;ndash;&amp;gt; 主板初始化程序 &amp;ndash;&amp;gt; bootloader(mode:real-&amp;gt;protect) &amp;mdash;&amp;gt; 操作系统 操作系统 初始化 kernel: vmlinuz-&amp;hellip; ramfs: initramfs&amp;hellip; 服</description>
     </item>
     

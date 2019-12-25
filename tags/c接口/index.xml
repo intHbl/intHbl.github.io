@@ -13,10 +13,10 @@
     
     <item>
       <title>Syscall</title>
-      <link>https://inthbl.github.io/posts/linux/syscall.html</link>
+      <link>https://inthbl.github.io/os/linux/syscall.html</link>
       <pubDate>Wed, 25 Dec 2019 01:16:24 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/posts/linux/syscall.html</guid>
+      <guid>https://inthbl.github.io/os/linux/syscall.html</guid>
       <description>api , system call System calls can be grouped roughly into six major categories:[12] Process control • create process (for example, fork on Unix-like systems, or NtCreateProcess in the Windows NT Native API) • terminate process • load, execute •</description>
     </item>
     
