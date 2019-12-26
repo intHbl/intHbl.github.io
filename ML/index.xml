@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>线性代数</title>
+      <link>https://inthbl.github.io/ML/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</link>
+      <pubDate>Thu, 26 Dec 2019 23:38:44 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/ML/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</guid>
+      <description>1 线性代数 linear algebra 求解线性方程: 高斯消元法(初等变换): Reduced row echelon form/RREF 化成梯形 x=np.linalg.solve(A, b) returnbool=np.allclose(np.dot(A, x), b) #</description>
+    </item>
+    
+    <item>
       <title>数学建模</title>
       <link>https://inthbl.github.io/ML/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</link>
       <pubDate>Wed, 25 Dec 2019 18:14:09 +0800</pubDate>

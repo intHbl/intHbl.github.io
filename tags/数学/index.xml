@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数学 on Int-Han的博客</title>
+    <link>https://inthbl.github.io/tags/%E6%95%B0%E5%AD%A6.html</link>
+    <description>Recent content in 数学 on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 26 Dec 2019 23:38:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/tags/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>线性代数</title>
+      <link>https://inthbl.github.io/ML/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</link>
+      <pubDate>Thu, 26 Dec 2019 23:38:44 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/ML/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</guid>
+      <description>1 线性代数 linear algebra 求解线性方程: 高斯消元法(初等变换): Reduced row echelon form/RREF 化成梯形 x=np.linalg.solve(A, b) returnbool=np.allclose(np.dot(A, x), b) #</description>
+    </item>
+    
+  </channel>
+</rss>
