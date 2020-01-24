@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>daily on Int-Han的博客</title>
+    <link>https://inthbl.github.io/categories/daily.html</link>
+    <description>Recent content in daily on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 20 Dec 2019 15:01:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test page</title>
+      <link>https://inthbl.github.io/basic/testpage.html</link>
+      <pubDate>Fri, 20 Dec 2019 15:01:44 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/basic/testpage.html</guid>
+      <description>测试 测试标题 公式 $s=\sum_{i=0}^N a_i$ $$s=\int_0^xf(x)dx$$ code func main(){ fmt.Println(&amp;#34;hello world&amp;#34;) } func Foo(){ //.. } class A: def __init__(self,a,b,c,*arg): self.foo() ## def foo(self,..): #... pass class B(A): def __init__(self,a,b,c,*arg): super(a,b,c,*arg) if __name__==&amp;#34;__main__&amp;#34;: print(&amp;#34;hello world&amp;#34;)</description>
+    </item>
+    
+  </channel>
+</rss>

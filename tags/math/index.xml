@@ -12,12 +12,66 @@
     
     
     <item>
-      <title>数学建模</title>
-      <link>https://inthbl.github.io/ML/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</link>
+      <title>微分几何</title>
+      <link>https://inthbl.github.io/math/m%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95.html</link>
       <pubDate>Wed, 25 Dec 2019 18:14:09 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/ML/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</guid>
+      <guid>https://inthbl.github.io/math/m%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95.html</guid>
+      <description>相对论 量子物理 微分几何 &amp;lt;-&amp;gt; 广义相对论</description>
+    </item>
+    
+    <item>
+      <title>抽象代数</title>
+      <link>https://inthbl.github.io/math/m%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0.html</link>
+      <pubDate>Tue, 25 Dec 2018 18:14:09 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/math/m%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0.html</guid>
+      <description>抽象代数, 现代代数 集合论 set 群论 group = set + 运算 &amp;amp; 封闭 环 ring = set + 加法+ 乘法 &amp;amp; 封闭 域 field</description>
+    </item>
+    
+    <item>
+      <title>拓扑</title>
+      <link>https://inthbl.github.io/math/m%E6%8B%93%E6%89%91.html</link>
+      <pubDate>Tue, 25 Dec 2018 18:14:09 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/math/m%E6%8B%93%E6%89%91.html</guid>
+      <description>集合论 set 拓扑 = set + 临近关系</description>
+    </item>
+    
+    <item>
+      <title>集合论</title>
+      <link>https://inthbl.github.io/math/m%E9%9B%86%E5%90%88%E8%AE%BA.html</link>
+      <pubDate>Tue, 25 Dec 2018 18:14:09 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/math/m%E9%9B%86%E5%90%88%E8%AE%BA.html</guid>
+      <description>集合论 set ########## 拓扑 = set + 临近关系 ######### 群论 group = set + 运算 &amp;amp; 封闭 环 ring = set + 加法+ 乘法 &amp;amp; 封闭 域</description>
+    </item>
+    
+    <item>
+      <title>数学建模</title>
+      <link>https://inthbl.github.io/math/m%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</link>
+      <pubDate>Mon, 25 Dec 2017 18:14:09 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/math/m%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</guid>
       <description>模型: $\hat{y}=f_\theta(x)$ 输入x, 得到结果 x,y都可以是任意的数据类型! 误差 e $e=distance(y-\hat{y})$ 距离函数: 绝对值,</description>
+    </item>
+    
+    <item>
+      <title>微积分</title>
+      <link>https://inthbl.github.io/math/m%E5%BE%AE%E7%A7%AF%E5%88%86.html</link>
+      <pubDate>Mon, 26 Dec 2016 23:50:02 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/math/m%E5%BE%AE%E7%A7%AF%E5%88%86.html</guid>
+      <description>微分 连续可微 基本函数的 微分 : 常数 C: $dC=0$ 指数$dx^n = n x^{n-1}dx$, 对数$d lnx = \frac{1}{x}$ ; $d log_nx=d\frac{\ln x}{\ln n}=\frac{1}{x\ln</description>
+    </item>
+    
+    <item>
+      <title>线性代数</title>
+      <link>https://inthbl.github.io/math/m%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</link>
+      <pubDate>Mon, 26 Dec 2016 23:38:44 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/math/m%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</guid>
+      <description>线性代数, 高等代数 1 线性代数 linear algebra 求解线性方程: 高斯消元法(初等变换): Reduced row echelon form/RREF 化</description>
     </item>
     
   </channel>

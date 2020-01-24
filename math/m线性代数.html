@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.62.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>线性代数 | Int-Han的博客</title>
+    <meta property="og:title" content="线性代数 - Int-Han的博客">
+    <meta property="og:type" content="article">
+    
+    <meta property="article:published_time" content="2016-12-26T23:38:44&#43;08:00">
+    
+    
+    <meta property="article:modified_time" content="2016-12-26T23:38:44&#43;08:00">
+    
+    <meta name="Keywords" content="golang,微服务,python3,machine learning,deep learning,c/c&#43;&#43;,linux">
+    <meta name="description" content="线性代数">
+    
+    <meta name="author" content="Int-Han">
+    <meta property="og:url" content="https://inthbl.github.io/math/m%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/prism.css">
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://inthbl.github.io/">
+                        Int-Han的博客
+                    </a>
+                
+                <p class="description">golang/微服务/python3/machine learning/deep learning/ c/c&#43;&#43; / linux</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://inthbl.github.io/">首页</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_basic.html" title="Daliy😄">Daliy😄</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_ml.html" title="ML🎯👨‍🔧">ML🎯👨‍🔧</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_math.html" title="math">math</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_golang.html" title="Go👩‍💻">Go👩‍💻</a>
+                    
+                    <a  href="https://inthbl.github.io/archives_cs.html" title="CS">CS</a>
+                    
+                    <a  href="https://inthbl.github.io/about.html" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    <div class="sideToc">
+        <a href="javascript:void(0);">
+            <div id="sideTocHead">目 录</div>
+        </a>
+        <div id="sideTocBody" class="active">
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        .sideToc {
+            position: fixed;
+            z-index: 9999;
+            right: 30px;
+            display: flex;
+             
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #sideTocHead.active {
+            border: 2px red dotted;
+            background-color: white;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            border-radius: 5%;
+            height: 1rem;
+            font-size: 1rem;
+        }
+
+        #sideTocHead {
+            font-size: 0.5rem;
+            top: -20px;
+            color: tomato;
+            visibility: hidden;
+            font-weight: 700;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            padding: 0.2rem;
+            padding-left: 0.21rem;
+            padding-right: 0.1rem;
+            width: 1rem;
+            height: 2rem;
+            font-size: 0.9rem;
+            border-radius: 1%;
+        }
+
+         
+
+        #sideTocBody:hover {
+            width: 14rem;
+            transition: width 0.5s;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            border-left: 1px gray dashed;
+        }
+
+        #sideTocBody {
+            transition: width 0.3s;
+            display: block;
+            background-color: white;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            padding: 1rem;
+            padding-bottom: 0.5em;
+             
+            font-weight: 500;
+            width: 8rem;
+            max-height: 15rem;
+            overflow-y: auto;
+        }
+
+        .tocItem {
+            font-size: 1m;
+            background-color: rgb(102, 102, 102);
+            background-color: white;
+            display: block;
+            white-space: nowrap;
+        }
+
+        .tocItem:hover {
+            color: white;
+            background-color: rgb(102, 102, 102);
+        }
+
+        .tocItem.active {
+            color: rgb(185, 184, 184);
+            background-color: rgb(102, 102, 102);
+        }
+
+        #sideTocBody::-webkit-scrollbar {
+             
+            width: 10px;
+             
+            height: 1px;
+            display: none;
+        }
+
+        #sideTocBody::-webkit-scrollbar-thumb {
+             
+            border-radius: 10px;
+            box-shadow: inset 0 0 5px rgba(202, 202, 202, 0.5);
+            -webkit-box-shadow: inset 0 0 5px rgba(202, 202, 202, 0.5);
+            background: #9c9c9c;
+        }
+
+        #sideTocBody::-webkit-scrollbar-track {
+             
+            box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.5);
+            -webkit-box-shadow: inset 0 0 5px rgba(211, 211, 211, 0.5);
+            border-radius: 10px;
+            background: #EDEDED;
+        }
+    </style>
+    <script>
+        let isToggle = true;
+        document.querySelector("#sideTocHead").classList.add("active")
+        document.querySelector("#sideTocHead").addEventListener("click", function () {
+            if (isToggle) {
+                document.querySelector("#sideTocHead").classList.remove("active")
+                document.querySelector("#sideTocBody").style.display = "none"
+            } else {
+                document.querySelector("#sideTocHead").classList.add("active")
+                document.querySelector("#sideTocBody").style.display = "block"
+            }
+            isToggle = !isToggle;
+        })
+
+        document.querySelector("#sideTocHead").addEventListener("mouseenter", function () {
+            if (isToggle) {
+                document.querySelector("#sideTocBody").style.display = "block"
+            }
+
+        })
+
+        document.querySelector("#sideTocHead").addEventListener("mouseleave", function () {
+            if (!isToggle) {
+                document.querySelector("#sideTocBody").style.display = "none"
+            }
+        })
+
+        document.addEventListener("scroll", function (x) {
+            let post = document.querySelector(".post-content")
+            let toc = document.querySelector("#sideTocBody")
+            toc.scrollTop = (window.scrollY - post.offsetTop + 100) / post.offsetHeight * toc.offsetHeight;
+            if (window.scrollY > 70) {
+                document.querySelector("#sideTocHead").style.visibility = "visible"
+                document.querySelector("#sideTocBody").style.visibility = "visible"
+            } else {
+                document.querySelector("#sideTocHead").style.visibility = "hidden"
+                document.querySelector("#sideTocBody").style.visibility = "hidden"
+            }
+        })
+    </script>
+    
+
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    <div class="res-cons">
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">线性代数</h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2016年12月26日
+                            </date>
+                            
+                            <div class="post-meta">
+                                <span>| 分类: </span>
+                                
+                                <span class="meta-category"><a
+                                        href="https://inthbl.github.io/categories/math.html">
+                                        math</a></span>
+                                
+                            </div>
+                            
+                            
+                            <div class="post-meta">
+                                <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                                        阅读</span></span>
+                            </div>
+                            
+
+                            <div class="post-content">
+                                <blockquote>
+<p>线性代数, 高等代数</p>
+</blockquote>
+<h1 id="1--linear-algebra">1 线性代数 linear algebra</h1>
+<h2 id="heading">求解线性方程:</h2>
+<h3 id="heading-1">高斯消元法(初等变换):</h3>
+<p>Reduced row echelon form/RREF 化成梯形</p>
+<p>x=np.linalg.solve(A, b)</p>
+<p>returnbool=np.allclose(np.dot(A, x), b) #验证是否成立</p>
+<h3 id="-xa-1b">逆矩阵法 $x=A^{-1}b$</h3>
+<h2 id="vector">vector</h2>
+<p>内积,$\theta$ 为 u,v向量夹角.</p>
+<p>$$u\dot v =\sum_{i=1}^{N}u_iv_i=|u||v|cos\theta$$</p>
+<p>$$\theta=\frac{\sum_{i=1}{N}u_iv_i}{|u||v|}$$</p>
+<h2 id="matrix">Matrix</h2>
+<p>$$A_{m\times n}B_{n\times q}$$</p>
+<p>p=q, $$A_{m\times n}B_{p\times q}=C_{m\times q}$$</p>
+<p>矩阵特性:</p>
+<p>ABC=A(BC)</p>
+<p>A(u+v)=Au+Av</p>
+<p>$$(AB)^{T}=B^{T}A^{T}$$</p>
+<p>&hellip;.</p>
+<h3 id="heading-2">矩阵分解</h3>
+<p>&hellip;方阵分解
+奇异矩阵分解..</p>
+<h2 id="square-matrix">方阵,square Matrix</h2>
+<p>单位矩阵 identity I</p>
+<p>inverse Matrix 逆 $A^{-1}$</p>
+<p>$$AB=I \Rightarrow A=B^{-1} $$</p>
+<p>可逆vertible, non-singular(成对的),一定是square Matrix</p>
+<p>不可逆invertible, singular</p>
+<p>特性:</p>
+<p>n阶的方阵A =&gt; A转置也可逆</p>
+<p>n阶A,B分别可逆 =&gt; AB相乘之后也可逆</p>
+<p>方阵: 可逆 &lt;=&gt; 满秩 等价</p>
+<p>$$(AB)^{-1}=B^{-1}A^{-1}$$</p>
+<p>用途:</p>
+<p>解线性方程组 Ax=b =&gt;</p>
+<p>$$A^{-1}Ax=A^{-1}b \Rightarrow Ix=A^{-1}b $$</p>
+<p>求解逆:</p>
+<p>$$C[A|I]=[I|B] =&gt; CA=I,CI=B=C =&gt; A^{-1}=C=B$$</p>
+<p>C 等价于初等变换,$C=\prod_i C_i$</p>
+<h2 id="rank----linear-dependentindependent-">rank 秩 ; 线性相关/无关 linear dependent/independent ;</h2>
+<h2 id="--span-a-the-span-of-columns-of-a">空间 , span A :the span of columns of A</h2>
+<p>one-to-one onto( 一一映射) =&gt; 映射可逆</p>
+<p>定义域/值域(domain/range),一一映射 =&gt;定义域/值域 空间大小相同</p>
+<p>set A =&gt; span S</p>
+<h2 id="subspace---">subspace, 对 加法&amp;数乘 封闭.</h2>
+<p>$$0 \in V , u+v \in V , cv \in V (c\ is\ a\ scalar) $$</p>
+<p>Then span of vectors is a subspace. 向量生成(张成)的空间一定是子空间.反过来也成立</p>
+<p>subspace 可以看作是 vectors生成(span)空间</p>
+<p>Null space: Av=0的解组成的空间. 同时也是subspace</p>
+<p>$$Null A={v\in R^{n}:Av=0 }$$</p>
+<p>column space: Col A / row space: Row A ;</p>
+<p>$$Col A={Av:v\in R^n}$$</p>
+<p>column space == range(值域)</p>
+<h1 id="dimension">dimension维度</h1>
+<p>dim(range) + dim(Null)=dim(domain)</p>
+<p>dim(range)=rank(A)=dim(Col A)</p>
+<p>dim(domain)=n # num of columns #列数</p>
+<h2 id="basis--e-ii012n">basis 基 ${e_i},i=0,1,2,&hellip;,n$</h2>
+<p>充要条件:1.线性独立independent, 2.生成 R^n</p>
+<p>n个基向量 生成R^n 空间.</p>
+<h2 id="coordinate-system-">coordinate system 坐标系</h2>
+<p>转换: 笛卡尔坐标系D &lt;-&gt; 其他坐标系 B</p>
+<p>$$D[v]_D = B[v]_B $$</p>
+<p>[v]_D : D坐标系中的向量v.</p>
+<p>笛卡尔坐标系 D=I : $[v]_D=B[v]_B ;[v]_B=B^{-1}[v]_D$</p>
+<p>一般化: 坐标系之间互转.乘以逆就可以了</p>
+<p>$$D[v]_A = B[v]_B $$</p>
+<p>定义域对应定义域, 值域对应值域.</p>
+<p>$A=P^{-1}BP$ A, B 相似</p>
+<p>映射/函数 $[T]_B([v]_B)$ : 在不同坐标系中的转换</p>
+<h2 id="deteminant--">deteminant 行列式, 决定因素.</h2>
+<p>方阵:|A| = scalar ; det(A)= &hellip;</p>
+<p>公式</p>
+<p>cofactor(余子式) Expansion : 子矩阵$A_ij$ ,余子式$c_{ij}$</p>
+<p>去除i行,j列后的行列式</p>
+<p>$$c_{ij}=(-1)^{i+j}det(A_{ij})$$</p>
+<p>一直展开&hellip;.从n阶到一阶.</p>
+<p>一行为0或者两行相同 =&gt; det =0;</p>
+<p>上三角矩阵=&gt;斜对角矩阵,diag(&hellip;)=&gt;提出系数,I =&gt;det(A)=斜对角线相乘.</p>
+<p>性质,卡拉姆公式:</p>
+<p>det(I)1</p>
+<p>两行交换 行列式变号.</p>
+<p>&ldquo;linear&rdquo; for each row: 每行系数可以提出去;</p>
+<p>det([A+B]) != det(A)+det(B)这个不成立; 拆一行成立.</p>
+<p>A可逆 &lt;=&gt;det(A)!=0</p>
+<p>用途:</p>
+<p>提供矩阵的信息</p>
+<p>超立方体的超体积</p>
+
+                            </div>
+
+                            
+
+
+                            <div class="post-meta meta-tags">
+                                
+                                <ul class="clearfix">
+                                    
+
+                                    <li><a href="https://inthbl.github.io/tags/math.html">math</a>
+                                    </li>
+                                    
+
+                                    
+                                </ul>
+                                
+                            </div>
+                        </article>
+                        
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "intHbl/inthbl_blog_comment"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+
+                        
+                    </div>
+                </div>
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://inthbl.github.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://inthbl.github.io/categories/daily.html">daily (1)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/golang.html">golang (3)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/linux.html">linux (3)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/math.html">math (7)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/%E5%BC%80%E5%8F%91.html">开发 (3)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.html">操作系统原理 (7)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.html">机器学习 (3)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/%E7%89%A9%E7%90%86.html">物理 (1)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/%E7%AE%97%E6%B3%95.html">算法 (4)</a></li>
+    
+    <li><a href="https://inthbl.github.io/categories/%E7%BD%91%E7%BB%9C.html">网络 (3)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://inthbl.github.io/tags/boot.html">boot</a>
+    
+    <a href="https://inthbl.github.io/tags/encoding.html">encoding</a>
+    
+    <a href="https://inthbl.github.io/tags/fs.html">fs</a>
+    
+    <a href="https://inthbl.github.io/tags/git.html">git</a>
+    
+    <a href="https://inthbl.github.io/tags/grpc.html">grpc</a>
+    
+    <a href="https://inthbl.github.io/tags/https.html">https</a>
+    
+    <a href="https://inthbl.github.io/tags/io.html">io</a>
+    
+    <a href="https://inthbl.github.io/tags/math.html">math</a>
+    
+    <a href="https://inthbl.github.io/tags/nat.html">nat</a>
+    
+    <a href="https://inthbl.github.io/tags/protobuf3.html">protobuf3</a>
+    
+    <a href="https://inthbl.github.io/tags/shell.html">shell</a>
+    
+    <a href="https://inthbl.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F.html">分布式</a>
+    
+    <a href="https://inthbl.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95.html">数据结构算法</a>
+    
+    <a href="https://inthbl.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.html">机器学习</a>
+    
+    <a href="https://inthbl.github.io/tags/%E7%89%A9%E7%90%86.html">物理</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://github.com/intHbl" title="my github">github/intHbl</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="-" title="-">-</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://inthbl.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://inthbl.github.io/">Int-Han的博客 By Int-Han</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script>
+
+            (function () {
+                console.log(document.querySelector(".post-content").offsetTop)
+                let nodes = document.querySelector(".post-content").querySelectorAll("h1,h2,h3,h4,h5,h6")
+                let sideTocBody = document.querySelector("#sideTocBody")
+                
+                let tocItems = [];
+                document.querySelector(".post-content").childNodes.forEach(x => {
+                    
+                    if (!x.tagName) {
+                        return
+                    }
+                    var tg = x.tagName.match(/^H(\d)$/);
+                    
+                    if (!tg) {
+                        return
+                    }
+                    
+                    let hi = parseInt(tg[1])
+                    if (hi > 0) {
+                        let div = document.createElement("a")
+                        div.classList.add("tocItem")
+                        div.href = "#" + x.id;
+                        div.innerHTML = "&nbsp;".repeat(hi * 2) + x.innerText
+                        sideTocBody.appendChild(div)
+                        tocItems.push([x.offsetTop, div])
+                    }
+
+                    
+                    
+                })
+
+                tocItems.sort((x) => {
+                    return x[0]
+                })
+
+
+                let last = 0;
+                function item_i(i) {
+                    return tocItems[i][1]
+                }
+                function item_offsetY(i) {
+                    return tocItems[i][0]
+                }
+
+                item_i(last).classList.add("active")
+
+                window.addEventListener("scroll", function (x) {
+                    for (let i = 0; i < tocItems.length; i++) {
+                        
+                        if (window.scrollY < item_offsetY(i)) {
+                            if (window.scrollY + 0.8 * window.innerHeight < item_offsetY(i)) {
+                                i = i >= 1 ? i - 1 : 0
+                            }
+                            if (i != last) {
+                                item_i(last).classList.remove("active")
+                                item_i(i).classList.add("active")
+                                last = i
+                                
+                            }
+                            break
+                        }
+                    }
+                })
+
+
+            })()
+
+    </script>
+    <script type="text/javascript" src="/prism.js"></script>
+    <script type="text/javascript">
+            (function () {
+                if (typeof self === 'undefined' || !self.Prism || !self.document) {
+                    return;
+                }
+
+                if (!Prism.plugins.toolbar) {
+                    console.warn('Copy to Clipboard plugin loaded before Toolbar plugin.');
+
+                    return;
+                }
+
+                var ClipboardJS = window.ClipboardJS || undefined;
+
+                if (!ClipboardJS && typeof require === 'function') {
+                    ClipboardJS = require('clipboard');
+                }
+
+                var callbacks = [];
+
+                if (!ClipboardJS) {
+                    var script = document.createElement('script');
+                    var head = document.querySelector('head');
+
+                    script.onload = function () {
+                        ClipboardJS = window.ClipboardJS;
+
+                        if (ClipboardJS) {
+                            while (callbacks.length) {
+                                callbacks.pop()();
+                            }
+                        }
+                    };
+
+                    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js';
+                    head.appendChild(script);
+                }
+
+                Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
+                    var linkCopy = document.createElement('button');
+                    linkCopy.textContent = '复制代码';
+
+                    if (!ClipboardJS) {
+                        callbacks.push(registerClipboard);
+                    } else {
+                        registerClipboard();
+                    }
+
+                    return linkCopy;
+
+                    function registerClipboard() {
+                        var clip = new ClipboardJS(linkCopy, {
+                            'text': function () {
+                                return env.code;
+                            }
+                        });
+
+                        clip.on('success', function () {
+                            linkCopy.textContent = '复制成功!';
+
+                            resetText();
+                        });
+                        clip.on('error', function () {
+                            linkCopy.textContent = '按 Ctrl+C 复制';
+
+                            resetText();
+                        });
+                    }
+
+                    function resetText() {
+                        setTimeout(function () {
+                            linkCopy.textContent = '复制代码';
+                        }, 5000);
+                    }
+                });
+            })();
+
+    </script>
+</body>
+
+</html>

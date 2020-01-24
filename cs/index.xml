@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cs on Int-Han的博客</title>
+    <link>https://inthbl.github.io/cs.html</link>
+    <description>Recent content in Cs on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 17:02:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/cs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Https</title>
+      <link>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9Chttps.html</link>
+      <pubDate>Wed, 25 Dec 2019 17:02:15 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9Chttps.html</guid>
+      <description>https 证书 客户 | CA证书机构 | 服务方 客户 C: 持有预装的 CA公钥! CA: CA私钥,CA公钥 服</description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7git.html</link>
+      <pubDate>Wed, 25 Dec 2019 16:40:13 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7git.html</guid>
+      <description>git 详细: git-book object 一个对象 = 一个文件 ; 存于 .git/objects 文件夹内 类似 xy/ijk&amp;hellip; 文件, sha1= xyijk&amp;hellip; git add -&amp;gt; blob对象</description>
+    </item>
+    
+    <item>
+      <title>Hash 加密 签名 压缩</title>
+      <link>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-encoding-hash.html</link>
+      <pubDate>Wed, 25 Dec 2019 16:40:13 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-encoding-hash.html</guid>
+      <description>[]byte &amp;ndash;算法&amp;ndash;&amp;gt; []byte 失真(丢失部分信息) Hash 摘要 md5 sha1 &amp;hellip; ==&amp;gt; 定</description>
+    </item>
+    
+    <item>
+      <title>数据结构与算法</title>
+      <link>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html</link>
+      <pubDate>Wed, 25 Dec 2019 15:19:02 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>网络之NAT</title>
+      <link>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9Cnat.html</link>
+      <pubDate>Wed, 25 Dec 2019 14:16:04 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9Cnat.html</guid>
+      <description>NAT nat类型, p2p打洞原理 static : ip2 可以主动 连接ip1&amp;rsquo; 来连接 ip1 port1,port2 无限</description>
+    </item>
+    
+    <item>
+      <title>配置文件格式</title>
+      <link>https://inthbl.github.io/cs/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:34:28 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.html</guid>
+      <description>json; yaml; ini; toml json: .json v k:v 值v 可以为下列3选1: v [v,v,v] {k:v,} 注释的方法(**不一定支持**) // ,</description>
+    </item>
+    
+    <item>
+      <title>数据结构算法-graph</title>
+      <link>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95-graph.html</link>
+      <pubDate>Tue, 25 Dec 2018 01:27:37 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95-graph.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据结构算法-tree</title>
+      <link>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95-tree.html</link>
+      <pubDate>Tue, 25 Dec 2018 01:27:37 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95-tree.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据结构算法-排序</title>
+      <link>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F.html</link>
+      <pubDate>Tue, 25 Dec 2018 01:27:37 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-1 启动运行流程</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-1.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-1.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-2 进程管理</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-2.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-2.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-3 内存管理</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-3.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-3.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-4 文件系统</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-4.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-4.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-5 并发</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-5.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-5.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统相关 资料推荐</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>计算机组成</title>
+      <link>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90.html</link>
+      <pubDate>Mon, 25 Dec 2017 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90.html</guid>
+      <description>计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2 进程管理 操作系统原理-3 内</description>
+    </item>
+    
+    <item>
+      <title>计算机网络</title>
+      <link>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html</link>
+      <pubDate>Mon, 25 Dec 2017 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>grub2 引导</title>
+      <link>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-efi-grub2%E5%BC%95%E5%AF%BC.html</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-efi-grub2%E5%BC%95%E5%AF%BC.html</guid>
+      <description>uEFI i386 &amp;mdash;-&amp;gt; /efi/boot/bootia32.efi x86_64 &amp;mdash;-&amp;gt; /efi/boot/bootx64.efi cfg搜索路径(first match): -1-&amp;gt; /boot/grub/grub.cfg -2-&amp;gt; ./grub.cfg grub2 模块 grub_platform= &amp;ldquo;pc&amp;rdquo; | &amp;ldquo;efi&amp;rdquo; grub_cpu= &amp;ldquo;i386&amp;quot;|&amp;quot;x86_64&amp;rdquo; 模块路径 /boot/grub/${grub_cpu}-${grub_platform} #</description>
+    </item>
+    
+    <item>
+      <title>文件系统 制作 挂载</title>
+      <link>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.html</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.html</guid>
+      <description>lsblk 列出 块设备 block device 设备文件 /dev/sda1 mkfs -t ext4 /dev/sda1 挂载 / 卸载 mount -t ext4 /dev/sda1 /mnt umount /mnt 普通文件 dd -if=/dev/zero -of=some/img/name -bs=512 -count=1024 #size =</description>
+    </item>
+    
+    <item>
+      <title>linux shell 环境</title>
+      <link>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-linux-shell.html</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-linux-shell.html</guid>
+      <description>boot 加电&amp;ndash;&amp;gt; 主板初始化程序 &amp;ndash;&amp;gt; bootloader(mode:real-&amp;gt;protect) &amp;mdash;&amp;gt; 操作系统 操作系统 初始化 kernel: vmlinuz-&amp;hellip; ramfs: initramfs&amp;hellip; 服</description>
+    </item>
+    
+  </channel>
+</rss>

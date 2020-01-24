@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on Int-Han的博客</title>
+    <link>https://inthbl.github.io/tags/shell.html</link>
+    <description>Recent content in shell on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 11 Mar 2016 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>grub2 引导</title>
+      <link>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-efi-grub2%E5%BC%95%E5%AF%BC.html</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-efi-grub2%E5%BC%95%E5%AF%BC.html</guid>
+      <description>uEFI i386 &amp;mdash;-&amp;gt; /efi/boot/bootia32.efi x86_64 &amp;mdash;-&amp;gt; /efi/boot/bootx64.efi cfg搜索路径(first match): -1-&amp;gt; /boot/grub/grub.cfg -2-&amp;gt; ./grub.cfg grub2 模块 grub_platform= &amp;ldquo;pc&amp;rdquo; | &amp;ldquo;efi&amp;rdquo; grub_cpu= &amp;ldquo;i386&amp;quot;|&amp;quot;x86_64&amp;rdquo; 模块路径 /boot/grub/${grub_cpu}-${grub_platform} #</description>
+    </item>
+    
+    <item>
+      <title>文件系统 制作 挂载</title>
+      <link>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.html</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.html</guid>
+      <description>lsblk 列出 块设备 block device 设备文件 /dev/sda1 mkfs -t ext4 /dev/sda1 挂载 / 卸载 mount -t ext4 /dev/sda1 /mnt umount /mnt 普通文件 dd -if=/dev/zero -of=some/img/name -bs=512 -count=1024 #size =</description>
+    </item>
+    
+    <item>
+      <title>linux shell 环境</title>
+      <link>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-linux-shell.html</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-linux-shell.html</guid>
+      <description>boot 加电&amp;ndash;&amp;gt; 主板初始化程序 &amp;ndash;&amp;gt; bootloader(mode:real-&amp;gt;protect) &amp;mdash;&amp;gt; 操作系统 操作系统 初始化 kernel: vmlinuz-&amp;hellip; ramfs: initramfs&amp;hellip; 服</description>
+    </item>
+    
+  </channel>
+</rss>

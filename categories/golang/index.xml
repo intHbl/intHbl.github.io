@@ -13,28 +13,28 @@
     
     <item>
       <title>Io 文件io 网络io</title>
-      <link>https://inthbl.github.io/golang/io-%E6%96%87%E4%BB%B6io-%E7%BD%91%E7%BB%9Cio.html</link>
+      <link>https://inthbl.github.io/golang/%E5%88%86%E5%B8%83%E5%BC%8F/io-%E6%96%87%E4%BB%B6io-%E7%BD%91%E7%BB%9Cio.html</link>
       <pubDate>Wed, 25 Dec 2019 19:49:21 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/golang/io-%E6%96%87%E4%BB%B6io-%E7%BD%91%E7%BB%9Cio.html</guid>
+      <guid>https://inthbl.github.io/golang/%E5%88%86%E5%B8%83%E5%BC%8F/io-%E6%96%87%E4%BB%B6io-%E7%BD%91%E7%BB%9Cio.html</guid>
       <description>io 文件io 网络io 数据库 &amp;hellip;</description>
     </item>
     
     <item>
       <title>事务 分布式事务</title>
-      <link>https://inthbl.github.io/golang/%E4%BA%8B%E5%8A%A1%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1.html</link>
+      <link>https://inthbl.github.io/golang/%E5%88%86%E5%B8%83%E5%BC%8F/%E4%BA%8B%E5%8A%A1%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1.html</link>
       <pubDate>Wed, 25 Dec 2019 19:46:42 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/golang/%E4%BA%8B%E5%8A%A1%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1.html</guid>
+      <guid>https://inthbl.github.io/golang/%E5%88%86%E5%B8%83%E5%BC%8F/%E4%BA%8B%E5%8A%A1%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1.html</guid>
       <description>事务 分布式事务 ..</description>
     </item>
     
     <item>
       <title>Protobuf</title>
-      <link>https://inthbl.github.io/golang/protobuf.html</link>
+      <link>https://inthbl.github.io/golang/%E5%88%86%E5%B8%83%E5%BC%8F/protobuf.html</link>
       <pubDate>Wed, 25 Dec 2019 01:27:37 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/golang/protobuf.html</guid>
+      <guid>https://inthbl.github.io/golang/%E5%88%86%E5%B8%83%E5%BC%8F/protobuf.html</guid>
       <description>grpc protobuf3 struct ,数据 grpc http/2 服务接口 .proto syntax=&amp;#34;proto3&amp;#34;;package xxxx;message Data{ string name=1; //optional|required; # 默认 optional int32 age=2; // repeated array }message Response{ string xx=1; int64 abc=2; repeated string yy=3;}//rpc service SSS{ rpc</description>
     </item>
     

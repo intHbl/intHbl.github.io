@@ -6,36 +6,36 @@
     <description>Recent content in MLs on Int-Han的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Dec 2019 23:50:02 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Dec 2018 18:14:09 +0800</lastBuildDate>
     
 	<atom:link href="https://inthbl.github.io/ML/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>微积分</title>
-      <link>https://inthbl.github.io/ML/%E5%BE%AE%E7%A7%AF%E5%88%86.html</link>
-      <pubDate>Thu, 26 Dec 2019 23:50:02 +0800</pubDate>
+      <title>深度神经网络</title>
+      <link>https://inthbl.github.io/ML/dl-dnn.html</link>
+      <pubDate>Tue, 25 Dec 2018 18:14:09 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/ML/%E5%BE%AE%E7%A7%AF%E5%88%86.html</guid>
-      <description>微分 连续可微 基本函数的 微分 : 常数 C: $dC=0$ 指数$dx^n = n x^{n-1}dx$, 对数$d lnx = \frac{1}{x}$ ; $d log_nx=d\frac{\ln x}{\ln n}=\frac{1}{x\ln</description>
+      <guid>https://inthbl.github.io/ML/dl-dnn.html</guid>
+      <description>x -&amp;gt; { y=wx+b -&amp;gt; y=relu(y) } * N -&amp;gt; y</description>
     </item>
     
     <item>
-      <title>线性代数</title>
-      <link>https://inthbl.github.io/ML/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</link>
-      <pubDate>Thu, 26 Dec 2019 23:38:44 +0800</pubDate>
+      <title>逻辑回归</title>
+      <link>https://inthbl.github.io/ML/ml-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.html</link>
+      <pubDate>Tue, 25 Dec 2018 18:14:09 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/ML/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0.html</guid>
-      <description>1 线性代数 linear algebra 求解线性方程: 高斯消元法(初等变换): Reduced row echelon form/RREF 化成梯形 x=np.linalg.solve(A, b) returnbool=np.allclose(np.dot(A, x), b) #</description>
+      <guid>https://inthbl.github.io/ML/ml-%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.html</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>数学建模</title>
-      <link>https://inthbl.github.io/ML/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</link>
-      <pubDate>Wed, 25 Dec 2019 18:14:09 +0800</pubDate>
+      <title>逻辑回归</title>
+      <link>https://inthbl.github.io/ML/ml-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92.html</link>
+      <pubDate>Tue, 25 Dec 2018 18:14:09 +0800</pubDate>
       
-      <guid>https://inthbl.github.io/ML/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.html</guid>
-      <description>模型: $\hat{y}=f_\theta(x)$ 输入x, 得到结果 x,y都可以是任意的数据类型! 误差 e $e=distance(y-\hat{y})$ 距离函数: 绝对值,</description>
+      <guid>https://inthbl.github.io/ML/ml-%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92.html</guid>
+      <description></description>
     </item>
     
   </channel>

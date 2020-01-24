@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>操作系统原理 on Int-Han的博客</title>
+    <link>https://inthbl.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.html</link>
+    <description>Recent content in 操作系统原理 on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 15 Jan 2018 20:20:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>操作系统原理-1 启动运行流程</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-1.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-1.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-2 进程管理</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-2.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-2.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-3 内存管理</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-3.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-3.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-4 文件系统</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-4.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-4.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统原理-5 并发</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-5.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-5.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>操作系统相关 资料推荐</title>
+      <link>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99.html</link>
+      <pubDate>Mon, 15 Jan 2018 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99.html</guid>
+      <description>相关资料 引用&amp;amp;推荐 计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2</description>
+    </item>
+    
+    <item>
+      <title>计算机组成</title>
+      <link>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90.html</link>
+      <pubDate>Mon, 25 Dec 2017 20:20:20 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90.html</guid>
+      <description>计算机组成 操作系统原理-1 启动运行流程 操作系统原理-2 进程管理 操作系统原理-3 内</description>
+    </item>
+    
+  </channel>
+</rss>

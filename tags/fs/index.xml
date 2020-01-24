@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fs on Int-Han的博客</title>
+    <link>https://inthbl.github.io/tags/fs.html</link>
+    <description>Recent content in fs on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 11 Mar 2016 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/tags/fs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>文件系统 制作 挂载</title>
+      <link>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.html</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E7%B3%BB%E7%BB%9F-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.html</guid>
+      <description>lsblk 列出 块设备 block device 设备文件 /dev/sda1 mkfs -t ext4 /dev/sda1 挂载 / 卸载 mount -t ext4 /dev/sda1 /mnt umount /mnt 普通文件 dd -if=/dev/zero -of=some/img/name -bs=512 -count=1024 #size =</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>encoding on Int-Han的博客</title>
+    <link>https://inthbl.github.io/tags/encoding.html</link>
+    <description>Recent content in encoding on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 16:40:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/tags/encoding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hash 加密 签名 压缩</title>
+      <link>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-encoding-hash.html</link>
+      <pubDate>Wed, 25 Dec 2019 16:40:13 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-encoding-hash.html</guid>
+      <description>[]byte &amp;ndash;算法&amp;ndash;&amp;gt; []byte 失真(丢失部分信息) Hash 摘要 md5 sha1 &amp;hellip; ==&amp;gt; 定</description>
+    </item>
+    
+  </channel>
+</rss>

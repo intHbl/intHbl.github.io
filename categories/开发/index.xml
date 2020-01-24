@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发 on Int-Han的博客</title>
+    <link>https://inthbl.github.io/categories/%E5%BC%80%E5%8F%91.html</link>
+    <description>Recent content in 开发 on Int-Han的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 25 Dec 2019 16:40:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://inthbl.github.io/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git</title>
+      <link>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7git.html</link>
+      <pubDate>Wed, 25 Dec 2019 16:40:13 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7git.html</guid>
+      <description>git 详细: git-book object 一个对象 = 一个文件 ; 存于 .git/objects 文件夹内 类似 xy/ijk&amp;hellip; 文件, sha1= xyijk&amp;hellip; git add -&amp;gt; blob对象</description>
+    </item>
+    
+    <item>
+      <title>Hash 加密 签名 压缩</title>
+      <link>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-encoding-hash.html</link>
+      <pubDate>Wed, 25 Dec 2019 16:40:13 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E5%BC%80%E5%8F%91-encoding-hash.html</guid>
+      <description>[]byte &amp;ndash;算法&amp;ndash;&amp;gt; []byte 失真(丢失部分信息) Hash 摘要 md5 sha1 &amp;hellip; ==&amp;gt; 定</description>
+    </item>
+    
+    <item>
+      <title>配置文件格式</title>
+      <link>https://inthbl.github.io/cs/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.html</link>
+      <pubDate>Wed, 25 Dec 2019 01:34:28 +0800</pubDate>
+      
+      <guid>https://inthbl.github.io/cs/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.html</guid>
+      <description>json; yaml; ini; toml json: .json v k:v 值v 可以为下列3选1: v [v,v,v] {k:v,} 注释的方法(**不一定支持**) // ,</description>
+    </item>
+    
+  </channel>
+</rss>
